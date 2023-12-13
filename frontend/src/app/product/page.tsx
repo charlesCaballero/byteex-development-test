@@ -4,6 +4,7 @@ import TopBenefits from "./TopBenefits";
 import AboutSection from "./AboutSection";
 import OrderSection from "./OrderSection";
 import ReviewsSection from "./ReviewsSection";
+import FAQSection from "./FAQSection";
 
 const Product = () => {
   return (
@@ -18,6 +19,8 @@ const Product = () => {
       <OrderSection />
       {/* Review Section */}
       <ReviewsSection />
+      {/* FAQ Section */}
+      <FAQSection />
     </main>
   );
 };

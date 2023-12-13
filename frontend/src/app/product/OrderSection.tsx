@@ -13,7 +13,7 @@ const OrderSection = () => {
       <div className="pb-10">
         <LeadText size="text-[32px]">Comfort made easy</LeadText>
       </div>
-      <div className="flex flex-row gap-10">
+      <div className="flex flex-row gap-10 px-20">
         <OrderCards
           bg=" bg-[#EDEDED]"
           icon={<CartIcon width="50" height="50" />}
