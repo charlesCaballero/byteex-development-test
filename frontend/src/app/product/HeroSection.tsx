@@ -39,15 +39,15 @@ const HeroSection = () => {
             <div className="p-3">
               <div className="py-5">
                 <ListwithIcon
-                  icon={<SunMoonIcon />}
+                  icon={<SunMoonIcon width="18" height="18" />}
                   text="Beautiful, comfortable loungewear for day or night."
                 />
                 <ListwithIcon
-                  icon={<CartIcon />}
+                  icon={<CartIcon width="18" height="18" />}
                   text="No wasteful extras, like tags or plastic packaging."
                 />
                 <ListwithIcon
-                  icon={<WaveIcon />}
+                  icon={<WaveIcon width="15" height="15" />}
                   text="Our signature fabric is incredibly comfortable — unlike anything you've ever felt."
                 />
               </div>

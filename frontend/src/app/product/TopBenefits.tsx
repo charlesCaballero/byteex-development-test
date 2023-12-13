@@ -17,7 +17,7 @@ const artboards = [artboard1, artboard2, artboard3, artboard4, artboard5];
 const TopBenefits = () => {
   return (
     <div className="inline-block w-full">
-      <div className="bg-gradient-to-b from-[#F9F0E5] from-10% via-white via-40% to-white to-90% px-32 py-24">
+      <div className="bg-gradient-to-b from-[#F9F0E5] from-10% via-white via-40% to-white to-90% px-32 py-20">
         {/* Artboard */}
         <p className="text-center text-[#868787] text-[20px] font-semibold pb-2">
           as seen in
@@ -38,7 +38,7 @@ const TopBenefits = () => {
           })}
         </div>
         {/* Main content */}
-        <div className="flex flex-row py-24">
+        <div className="flex flex-row pt-20">
           <div className="w-1/2">
             <div className="pb-14">
               <LeadText size="text-[48px]">
@@ -62,7 +62,7 @@ const TopBenefits = () => {
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat. "
               />
               <ListwithIcon
-                icon={<WaveIcon />}
+                icon={<WaveIcon width="20" height="20" />}
                 title="Unimaginably comfortable."
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat. "
               />
