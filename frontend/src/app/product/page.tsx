@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection";
 import TopBenefits from "./TopBenefits";
 import AboutSection from "./AboutSection";
 import OrderSection from "./OrderSection";
+import ReviewsSection from "./ReviewsSection";
 
 const Product = () => {
   return (
@@ -15,6 +16,8 @@ const Product = () => {
       <AboutSection />
       {/* Order Section */}
       <OrderSection />
+      {/* Review Section */}
+      <ReviewsSection />
     </main>
   );
 };

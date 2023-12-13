@@ -33,7 +33,7 @@ const OrderSection = () => {
           text="Wear hernest around the house, out on the town, or in bed."
         />
       </div>
-      <div className="text-center p-10">
+      <div className="text-center pt-10 px-10">
         <ProductButton />
         <div className="flex flex-row items-center justify-center gap-2 py-3">
           <div className="flex flex-row gap-1 ">

@@ -20,7 +20,7 @@ const TruckIcon = ({
         stroke="#01005B"
         strokeWidth="3"
       />
-      <g clip-path="url(#clip0_1_1501)">
+      <g clipPath="url(#clip0_1_1501)">
         <path
           d="M48.9586 35.1781H35.4695V33.1364H46.9169V9.20723H21.5417V33.1364H25.8055V35.1781H19.5V7.16553H48.9586V35.1781Z"
           fill="#01005B"
