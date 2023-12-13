@@ -1,20 +1,14 @@
 import SunMoonIcon from "@/icons/SunMoonIcon";
-import {
-  Avatar,
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-} from "@nextui-org/react";
+import { Avatar, Button, Card, CardBody, CardHeader } from "@nextui-org/react";
 import Image from "next/image";
 import React from "react";
-import ListwithIcon from "./ListwithIcon";
+import ListwithIcon from "../components/ListwithIcon";
 import ArrowIcon from "@/icons/ArrowIcon";
-import Rectangle from "./Rectangle";
+import Rectangle from "../components/Rectangle";
 import WaveIcon from "@/icons/WaveIcon";
 import CartIcon from "@/icons/CartIcon";
 import StarIcon from "@/icons/StarIcon";
+import LeadText from "../components/LeadText";
 
 const HeroSection = () => {
   return (
@@ -39,9 +33,9 @@ const HeroSection = () => {
         {/* Hero Content */}
         <div className="flex flex-row p-2">
           <div className="w-1/2">
-            <h1 className="text-[58px] font-normal text-[#01005B] leading-normal font-sans">
+            <LeadText size="text-[58px]">
               Don&apos;t apologize for being comfortable.
-            </h1>
+            </LeadText>
             <div className="p-3">
               <div className="py-5">
                 <ListwithIcon
