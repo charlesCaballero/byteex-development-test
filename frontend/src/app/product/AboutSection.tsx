@@ -6,45 +6,26 @@ import Photo from "../components/Photo";
 
 const AboutSection = () => {
   return (
-    <div className="inline-block w-full bg-[#F0EEEF] p-5 md:p-10">
-      <div className="grid grid-rows-1 grid-cols-1 md:grid-cols-2 px-5 md:px-10">
-        {/* Images */}
-        {/* Collage */}
-        <div className="md:col-span-1 sm:col-span-full">
-          <div className="relative w-full p-10">
-            <Photo
-              src={"/images/photo3.png"}
-              height={"h-[550px]"}
-              width={"w-[330px]"}
-              margin="m-auto my-28"
-              alt="photo1"
-            />
-            <div className="absolute left-1/4 transform -translate-x-1/5 top-24 z-10 border-4 border-white">
-              <Image
-                src={"/images/photo1.png"}
-                height={125}
-                width={115}
-                alt="photo1"
-                className="block object-cover w-full h-full"
-              />
-            </div>
-            <div className="absolute right-1/4 transform translate-x-1/5 bottom-24 z-10 border-4 border-white">
-              <Image
-                src={"/images/photo4.png"}
-                height={125}
-                width={115}
-                alt="photo1"
-                className="block object-cover w-full h-full"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="w-full md:col-span-1 sm:col-span-full py-5 md:py-10 pr-5 md:pr-10">
-          {/* Content text */}
+    <div className="inline-block w-full bg-[#F0EEEF] p-[6%]">
+      <div className="block py-3  lg:grid lg:grid-rows-5 lg:grid-cols-6 lg:grid-flow-col-dense w-full">
+        {/* Content text */}
+        <div className="text-center lg:order-2 lg:text-left lg:row-span-1 lg:col-span-3 lg:grid lg:content-start">
           <LeadText size="text-[24px] md:text-[32px]">
             Be your best self.
           </LeadText>
-          <p className="leading-[23px] font-normal text-[#6C6C6C] text-[15px] py-5 mb-6">
+        </div>
+        {/* Collage */}
+        <div className="flex justify-center lg:grid  lg:row-span-full lg:col-span-3 lg:order-1">
+          <Photo
+            src="/images/about_image.png"
+            alt="about_image"
+            width="w-[324px] lg:w-[524px]"
+            height="h-[464px] lg:h-[664px]"
+          />
+        </div>
+
+        <div className="lg:row-span-4 lg:col-span-3 lg:order-3">
+          <p className="leading-[23px] font-normal text-[#6C6C6C] text-[15px]  mb-6">
             Hi! My name&apos;s [Insert Name], and I founded [Insert] in ____.{" "}
             <br />
             <br />
@@ -70,7 +51,9 @@ const AboutSection = () => {
             <br />
             Cras mattis varius mollis.
           </p>
-          <ProductButton />
+          <div className="hidden lg:block">
+            <ProductButton />
+          </div>
         </div>
       </div>
     </div>

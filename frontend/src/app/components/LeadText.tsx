@@ -9,7 +9,7 @@ const LeadText = ({
 }) => {
   return (
     <h1
-      className={`${size} font-semibold text-[#01005B] leading-normal font-sans`}
+      className={`${size} font-semibold text-[#01005B] leading-normal font-sans `}
     >
       {children}
     </h1>

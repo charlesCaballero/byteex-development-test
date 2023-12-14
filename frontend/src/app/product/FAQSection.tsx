@@ -6,6 +6,9 @@ import PlusIcon from "@/icons/PlusIcon";
 import MinusIcon from "@/icons/MinusIcon";
 import Image from "next/image";
 import Rectangle from "../components/Rectangle";
+import StarIcon from "@/icons/StarIcon";
+import ProductButton from "../components/ProductButton";
+import Photo from "../components/Photo";
 
 const faq = [
   {
@@ -42,10 +45,12 @@ const faq = [
 
 const FAQSection = () => {
   return (
-    <div className="inline-block w-full p-24">
-      <div className="flex flex-row">
-        <div className="w-1/2 pl-20 flex-1">
-          <LeadText size="text-[32px]">Frequently asked questions.</LeadText>
+    <div className="inline-block w-full p-[8%]">
+      <div className="flex flex-row gap-10">
+        <div className="lg:w-1/2 lg:pl-20 flex-1">
+          <div className="text-center lg:text-left">
+            <LeadText size="text-[32px]">Frequently asked questions.</LeadText>
+          </div>
           <div className="py-10">
             <Accordion>
               {faq.map((val: any, index) => (
@@ -62,38 +67,28 @@ const FAQSection = () => {
               ))}
             </Accordion>
           </div>
+          <div className="block lg:hidden text-center pt-10 lg:px-10">
+            <ProductButton />
+            <div className="flex flex-row items-center justify-center gap-2 pt-3">
+              <div className="flex flex-row gap-1 ">
+                {[1, 2, 3, 4, 5].map((num) => (
+                  <StarIcon key={num} />
+                ))}
+              </div>
+              <p className="text-[12px] text-[#828282]">
+                One of 500+ 5 Star Reviews Online
+              </p>
+            </div>
+          </div>
         </div>
         {/* Collage */}
-        <div className="w-1/2 flex flex-1">
-          <div className="relative w-full flex-1">
-            <Rectangle position="absolute" top="top-0" left="left-[230px]" />
-            <Image
-              src={"/images/photo1.png"}
-              height={360}
-              width={250}
-              alt="photo1"
-              className=" block absolute left-0 right-0 bottom-0 top-0 m-auto z-10"
-            />
-            <Image
-              src={"/images/photo5.png"}
-              height={220}
-              width={150}
-              alt="photo1"
-              className="block absolute right-[190px] -top-12 z-0"
-            />
-            <Image
-              src={"/images/photo7.png"}
-              height={159}
-              width={216}
-              alt="photo1"
-              className="block absolute left-[190px] -bottom-12 z-0"
-            />
-            <Rectangle
-              position="absolute"
-              bottom="bottom-10"
-              right="right-[220px]"
-            />
-          </div>
+        <div className="hidden w-1/2 lg:flex flex-1">
+          <Photo
+            src="/images/faq_image.png"
+            alt="faq image "
+            width="w-[441px]"
+            height="h-[602px]"
+          />
         </div>
       </div>
     </div>

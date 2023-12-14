@@ -10,7 +10,7 @@ import FinalCTASection from "./FinalCTASection";
 
 const Product = () => {
   return (
-    <main className="inline-block">
+    <main className="w-full inline-block">
       {/* Hero Section */}
       <HeroSection />
       {/* Top Benefits Section*/}
