@@ -18,7 +18,7 @@ const ReviewsSection = () => {
         </p>
       </div>
       {/* Image collage */}
-      <div className="flex flex-row flex-wrap gap-1 w-full px-1">
+      <div className="flex flex-row flex-wrap gap-1 w-full px-1 justify-center items-center">
         {images.map((cnt) => {
           return (
             <Image
