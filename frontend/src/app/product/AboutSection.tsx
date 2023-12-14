@@ -12,7 +12,8 @@ const AboutSection = () => {
           {/* Content text */}
           <LeadText size="text-[32px]">Be your best self.</LeadText>
           <p className="leading-[23px] font-normal text-[#6C6C6C] text-[15px] py-5 mb-6">
-            Hi! My name's [Insert Name], and I founded [Insert] in ____. <br />
+            Hi! My name&apos;s [Insert Name], and I founded [Insert] in ____.{" "}
+            <br />
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
             lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et

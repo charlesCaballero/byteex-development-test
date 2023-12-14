@@ -5,6 +5,7 @@ import AboutSection from "./AboutSection";
 import OrderSection from "./OrderSection";
 import ReviewsSection from "./ReviewsSection";
 import FAQSection from "./FAQSection";
+import InfoBannerSection from "./InfoBannerSection";
 
 const Product = () => {
   return (
@@ -21,6 +22,8 @@ const Product = () => {
       <ReviewsSection />
       {/* FAQ Section */}
       <FAQSection />
+      {/* InfoBannerSection */}
+      <InfoBannerSection />
     </main>
   );
 };
