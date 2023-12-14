@@ -6,6 +6,7 @@ import OrderSection from "./OrderSection";
 import ReviewsSection from "./ReviewsSection";
 import FAQSection from "./FAQSection";
 import InfoBannerSection from "./InfoBannerSection";
+import FinalCTASection from "./FinalCTASection";
 
 const Product = () => {
   return (
@@ -22,8 +23,10 @@ const Product = () => {
       <ReviewsSection />
       {/* FAQ Section */}
       <FAQSection />
-      {/* InfoBannerSection */}
+      {/* Info Banner Section */}
       <InfoBannerSection />
+      {/* Final CTA section */}
+      <FinalCTASection />
     </main>
   );
 };
