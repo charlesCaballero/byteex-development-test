@@ -9,11 +9,11 @@ import StarIcon from "@/icons/StarIcon";
 
 const OrderSection = () => {
   return (
-    <div className="inline-block w-full p-24 text-center">
+    <div className="inline-block w-full text-center p-[6%]">
       <div className="pb-10">
         <LeadText size="text-[32px]">Comfort made easy</LeadText>
       </div>
-      <div className="flex flex-row gap-10 px-20">
+      <div className="w-full flex flex-row flex-wrap gap-10 lg:px-20 justify-center">
         <OrderCards
           bg=" bg-[#EDEDED]"
           icon={<CartIcon width="50" height="50" />}
@@ -33,7 +33,7 @@ const OrderSection = () => {
           text="Wear hernest around the house, out on the town, or in bed."
         />
       </div>
-      <div className="text-center pt-10 px-10">
+      <div className="flex flex-col items-center pt-10 lg:px-10">
         <ProductButton />
         <div className="flex flex-row items-center justify-center gap-2 py-3">
           <div className="flex flex-row gap-1 ">

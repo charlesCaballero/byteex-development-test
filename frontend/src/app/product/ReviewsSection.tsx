@@ -9,9 +9,9 @@ const images = Array.from(Array(22).keys());
 const ReviewsSection = () => {
   return (
     <div className="inline-block w-full">
-      <div className="text-center w-3/4 px-28 mx-auto">
+      <div className="text-center px-10 lg:w-3/4 lg:px-28 mx-auto">
         <LeadText size="text-[32px]">What are our fans saying?</LeadText>
-        <p className="leading-[23px] text-[15px] text-[#676869] py-6 px-20">
+        <p className="leading-[23px] text-[15px] text-[#676869] py-6 lg:px-20">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
           lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et
           felis finibus consequat. Fusce non nibh luctus.
@@ -32,7 +32,7 @@ const ReviewsSection = () => {
         })}
       </div>
       <div>{/* Carousel of reviews */}</div>
-      <div className="text-center pt-10 px-10">
+      <div className="flex flex-col items-center  pt-10 px-10">
         <ProductButton />
         <div className="flex flex-row items-center justify-center gap-2 py-3">
           <div className="flex flex-row gap-1 ">

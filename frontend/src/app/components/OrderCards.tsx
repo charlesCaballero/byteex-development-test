@@ -14,7 +14,7 @@ const OrderCards = ({
 }) => {
   return (
     <div
-      className={`w-1/3 p-14 ${bg} flex flex-col items-center justify-center rounded-md`}
+      className={`w-[80%] lg:w-[30%] p-14 ${bg} flex flex-col items-center justify-center rounded-md`}
     >
       <div className="p-3">{icon}</div>
       <LeadText size="text-[22px]">{title}</LeadText>
